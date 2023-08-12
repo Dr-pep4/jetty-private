@@ -19,7 +19,7 @@
         #wrap {
             margin: 0 auto;
             width: 85%;
-            height: 500px;}
+            height: 600px;}
         #wrap>p{
             display:flex;
             border:1px solid black;
@@ -35,7 +35,7 @@
             display: flex;
         }
         table {
-    width: 100%;
+    width: 500px;
     border-collapse: collapse;
     background-color: rgba(255, 255, 255, 0.8);
   }
