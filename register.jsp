@@ -41,7 +41,7 @@
   }
   th, td {
     padding: 5px;
-    text-align: left;
+    text-align: center;
   }
 
   .left-column {
@@ -50,6 +50,10 @@
   .right-column {
     width: 90%;
   }
+    #btn{
+        width:80%;
+        height:20px;
+    }
     </style>
 </head>
 <body>
@@ -83,7 +87,7 @@
         <td class="right-column"><input style="width:10%" type="text" value="010" readonly id="first_phone" name="first_phone" required>- <input type="text" style="width:40%"id="mid_phone" name="mid_phone" required>- <input type="text" style="width:40%" id="last_phone" name="last_phone" required></td>
       </tr>
     </table>
-    <input type="submit" value="회원가입" style="width:100%; height:15px;">
+    <input type="submit" value="회원가입" id="btn">
   </form>
     </div>
     <%
