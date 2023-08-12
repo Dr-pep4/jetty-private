@@ -51,7 +51,7 @@
     width: 90%;
   }
     #btn{
-        width:80%;
+        width:200px;
         height:20px;
     }
     </style>
@@ -79,7 +79,7 @@
       </tr>
       <tr>
         <td class="left-column"><label for="text">address:</label></td>
-        <td class="right-column">< input type="text" style="width:90%" id="user_name" name="user_name" required></td>
+        <td class="right-column"><input type="text" style="width:90%" id="user_name" name="user_name" required></td>
       </tr>
       <tr>
         <td class="left-column"><label for="password">phone:</label></td>
