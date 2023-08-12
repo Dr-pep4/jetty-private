@@ -106,6 +106,21 @@
             display: flex;
             justify-content: space-around;
         }
+        table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  .left-column {
+    width: 10%;
+  }
+  .right-column {
+    width: 90%;
+  }
     </style>
 </head>
 <body>
