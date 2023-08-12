@@ -76,7 +76,7 @@
       </tr>
       <tr>
         <td class="left-column"><label for="text">address:</label></td>
-        <td class="right-column">< input type="text" style="width:100%" id="user_name" name="user_name" required>
+        <td class="right-column">< input type="text" style="width:100%" id="user_name" name="user_name" required></td>
       </tr>
       <tr>
         <td class="left-column"><label for="password">phone:</label></td>
