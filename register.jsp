@@ -12,16 +12,17 @@
     <style>
         body {
             background-image:url(https://images.pexels.com/photos/5767386/pexels-photo-5767386.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-            }
+             }
         #wrap {
             margin: 0 auto;
             width: 85%;
-            height: 500px;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            height: 500px;}
+        #wrap>p{
+            display:flex;
+            border:1px solid black;
+            justify-content:space-between;
         }
+
         h1{
             text-align: center;
         }
@@ -33,25 +34,40 @@
     </style>
 </head>
 <body>
-    <h1>회원가입</h1>
+    <header>
+        <h1 style="margin-left: 10px; float:left"><a href="/main" style="text-decoration:none; color:black">RECA</a></h1>
+        <h1>Join The Redffle!</h1>
+    </header>
     <hr>
     <div id="wrap">
   <form method="post" action="/register">
     <input type="hidden" name="gift" id="gift" value="${param.id}">
-    <label for="user_email">email:</label>
-    <input type="text" id="first_email" name="first_email" required>@<input type="text" id="last_email" name="last_email" required><br><br>
-    <label for="password">password:</label>
-    <input type="password" id="user_password" name="user_password" required><br><br>
-    <label for="text">name:</label>
-    <input type="text" id="user_name" name="user_name" required><br><br>
-    <label for="text">address:</label>
-    <input type="text" id="user_address" name="user_address" required><br><br>
-     <label for="password">phone:</label>
-      <input type="text" value="010" readonly id="first_phone" name="first_phone" required>- <input type="text" id="mid_phone" name="mid_phone" required>- <input type="text" id="last_phone" name="last_phone" required><br><br>
-    <input type="submit" value="회원가입">
-
+    <table>
+      <tr>
+        <th class="left-column"><label for="user_email">email:</label></th>
+        <th class="right-column"><input type="text" id="first_email" name="first_email" required>@<input type="text" id="last_email" name="last_email" required></th>
+      </tr>
+      <tr>
+        <td class="left-column"> <label for="password">password:</label></td>
+        <td class="right-column">  <input type="password" id="user_password" name="user_password" required></td>
+      </tr>
+      <tr>
+        <td class="left-column"><label for="text">name:</label></td>
+        <td class="right-column"><input type="text" id="user_name" name="user_name" required></td>
+      </tr>
+      <tr>
+        <td class="left-column"><label for="text">address:</label></td>
+        <td class="right-column"><input type="text" id="user_name" name="user_name" required>/td>
+      </tr>
+      <tr>
+        <td class="left-column"><label for="password">phone:</label></td>
+        <td class="right-column">  <input type="text" value="010" readonly id="first_phone" name="first_phone" required>- <input type="text" id="mid_phone" name="mid_phone" required>- <input type="text" id="last_phone" name="last_phone" required></td>
+      </tr>
+      <tr>
+        <input type="submit" value="회원가입" style="width:100%;">
+      </tr>
+    </table>
   </form>
-  <button onclick="success()">aaa </button>
     </div>
     <%
     String user_password = request.getParameter("user_password");
