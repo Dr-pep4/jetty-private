@@ -11,8 +11,8 @@
     <title>final_sign_up</title>
     <style>
         body {
-            background-image: url(https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80);
-        }
+            background-image:url(https://images.pexels.com/photos/5767386/pexels-photo-5767386.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+            }
         #wrap {
             margin: 0 auto;
             width: 85%;
