@@ -58,7 +58,6 @@
 </head>
 <body>
     <header>
-        <h1 style="margin-left: 10px; float:left"><a href="/main" style="text-decoration:none; color:black">RECA</a></h1>
         <h1>Join The Redffle!</h1>
     </header>
     <hr>
