@@ -67,23 +67,23 @@
     <table>
       <tr>
         <td class="left-column"><label for="user_email">email:</label></th>
-        <td class="right-column"><input style="width:45%" type="text" id="first_email" name="first_email" required>@<input style="width:45%" type="text" id="last_email" name="last_email" required></th>
+        <td class="right-column"><input style="width:40%" type="text" id="first_email" name="first_email" required>@<input style="width:40%" type="text" id="last_email" name="last_email" required></th>
       </tr>
       <tr>
         <td class="left-column"> <label for="password">password:</label></td>
-        <td class="right-column">  <input style="width: 100%" type="password" id="user_password" name="user_password" required></td>
+        <td class="right-column">  <input style="width: 90%" type="password" id="user_password" name="user_password" required></td>
       </tr>
       <tr>
         <td class="left-column"><label for="text">name:</label></td>
-        <td class="right-column"><input style="width:100%" type="text" id="user_name" name="user_name" required></td>
+        <td class="right-column"><input style="width:90%" type="text" id="user_name" name="user_name" required></td>
       </tr>
       <tr>
         <td class="left-column"><label for="text">address:</label></td>
-        <td class="right-column">< input type="text" style="width:100%" id="user_name" name="user_name" required></td>
+        <td class="right-column">< input type="text" style="width:90%" id="user_name" name="user_name" required></td>
       </tr>
       <tr>
         <td class="left-column"><label for="password">phone:</label></td>
-        <td class="right-column"><input style="width:10%" type="text" value="010" readonly id="first_phone" name="first_phone" required>- <input type="text" style="width:40%"id="mid_phone" name="mid_phone" required>- <input type="text" style="width:40%" id="last_phone" name="last_phone" required></td>
+        <td class="right-column"><input style="width:10%" type="text" value="010" readonly id="first_phone" name="first_phone" required>-<input type="text" style="width:30%"id="mid_phone" name="mid_phone" required>-<input type="text" style="width:30%" id="last_phone" name="last_phone" required></td>
       </tr>
     </table>
     <input type="submit" value="회원가입" id="btn">
