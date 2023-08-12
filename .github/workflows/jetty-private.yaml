@@ -36,4 +36,4 @@ jobs:
 
 
       - name: Restart OpenShift Admin Build
-        run: oc start-build jetty-private --from-dir=$GITHUB_WORKSPACE
+        run: oc start-build jetty-private --from-dir=$GITHUB_WORKSPACE -n backend
