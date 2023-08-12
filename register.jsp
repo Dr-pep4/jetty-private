@@ -11,8 +11,11 @@
     <title>final_sign_up</title>
     <style>
         body {
-            background-image:url(https://images.pexels.com/photos/5767386/pexels-photo-5767386.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-             }
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
         #wrap {
             margin: 0 auto;
             width: 85%;
@@ -174,7 +177,19 @@ out.println("<script>alert('예외 발생: " + e.getMessage() + "');</script>");
 
 </body>
 <script>
+    function applyBackgroundImage() {
+    const screenHeight = window.innerHeight;
+    const screenWidth = window.innerWidth;
 
+    if ( screenWidth > screenHeight) {
+      document.body.style.backgroundImage = 'url("https://images.pexels.com/photos/5767386/pexels-photo-5767386.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")';
+    } else {
+      document.body.style.backgroundImage = 'url("https://images.unsplash.com/photo-1607920592519-bab4d7db727d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80")';
+    }
+  }
+
+  window.addEventListener('resize', applyBackgroundImage);
+  window.addEventListener('load', applyBackgroundImage);
     function success(){
         window.location.href ="/admin_main";
     }
