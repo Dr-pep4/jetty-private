@@ -31,6 +31,21 @@
             width:80%;
             display: flex;
         }
+        table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  .left-column {
+    width: 10%;
+  }
+  .right-column {
+    width: 90%;
+  }
     </style>
 </head>
 <body>
@@ -44,8 +59,8 @@
     <input type="hidden" name="gift" id="gift" value="${param.id}">
     <table>
       <tr>
-        <th class="left-column"><label for="user_email">email:</label></th>
-        <th class="right-column"><input type="text" id="first_email" name="first_email" required>@<input type="text" id="last_email" name="last_email" required></th>
+        <td class="left-column"><label for="user_email">email:</label></th>
+        <td class="right-column"><input type="text" id="first_email" name="first_email" required>@<input type="text" id="last_email" name="last_email" required></th>
       </tr>
       <tr>
         <td class="left-column"> <label for="password">password:</label></td>
@@ -57,16 +72,14 @@
       </tr>
       <tr>
         <td class="left-column"><label for="text">address:</label></td>
-        <td class="right-column"><input type="text" id="user_name" name="user_name" required>/td>
+        <td class="right-column"><input type="text" id="user_name" name="user_name" required>
       </tr>
       <tr>
         <td class="left-column"><label for="password">phone:</label></td>
         <td class="right-column">  <input type="text" value="010" readonly id="first_phone" name="first_phone" required>- <input type="text" id="mid_phone" name="mid_phone" required>- <input type="text" id="last_phone" name="last_phone" required></td>
       </tr>
-      <tr>
-        <input type="submit" value="회원가입" style="width:100%;">
-      </tr>
     </table>
+    <input type="submit" value="회원가입" style="width:100%;">
   </form>
     </div>
     <%
