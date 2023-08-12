@@ -35,7 +35,7 @@
             display: flex;
         }
         table {
-    width: 500px;
+    width: 300px;
     border-collapse: collapse;
     background-color: rgba(255, 255, 255, 0.8);
   }
