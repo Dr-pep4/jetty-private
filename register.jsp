@@ -35,7 +35,7 @@
             display: flex;
         }
         table {
-    width: 300px;
+    width: 80%;
     border-collapse: collapse;
     background-color: rgba(255, 255, 255, 0.8);
   }
@@ -51,7 +51,7 @@
     width: 90%;
   }
     #btn{
-        width:200px;
+        width:80%;
         height:20px;
     }
     </style>
