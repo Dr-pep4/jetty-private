@@ -32,7 +32,7 @@ jobs:
           OPENSHIFT_CONFIG: ${{ secrets.OPENSHIFT_CONFIG }}
 
       - name: Log into OpenShift Cluster
-        run: oc login ${{ secrets.OPENSHIFT_API_ENDPOINT }} --username ${{ secrets.ONPREMIS_ID }} --password ${{ secrets.ONPREMISE_PASSWORD }}
+        run: oc login ${{ secrets.OPENSHIFT_API_ENDPOINT }} --username ${{ secrets.ONPREMIS_ID }} --password ${{ secrets.ONPREMIS_PASSWORD }}
 
 
       - name: Restart OpenShift Admin Build
