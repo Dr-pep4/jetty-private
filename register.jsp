@@ -35,11 +35,12 @@
             display: flex;
         }
         table {
-    width: 100%;
+    width: 500px;
     border-collapse: collapse;
     background-color: rgba(255, 255, 255, 0.8);
   }
   th, td {
+    height:20px;
     padding: 5px;
     text-align: center;
   }
