@@ -40,7 +40,7 @@
     background-color: rgba(255, 255, 255, 0.8);
   }
   th, td {
-    height:20px;
+    height:30px;
     padding: 5px;
     text-align: center;
   }
@@ -52,8 +52,8 @@
     width: 90%;
   }
     #btn{
-        width:80%;
-        height:20px;
+        width:500px;
+        height:30px;
     }
     </style>
 </head>
