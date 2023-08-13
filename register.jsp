@@ -87,7 +87,9 @@
         <td class="left-column"><label for="password">phone:</label></td>
         <td class="right-column"><input style="width:10%" type="text" value="010" readonly id="first_phone" name="first_phone" required>-<input type="text" style="width:30%"id="mid_phone" name="mid_phone" required>-<input type="text" style="width:30%" id="last_phone" name="last_phone" required></td>
       </tr>
+<tr>
 <input type="submit" value="회원가입" id="btn">
+</tr>
     </table>
     
   </form>
