@@ -36,7 +36,7 @@
         }
         table {
     margin: 0 auto;
-    width: 500px;
+    width: 300px;
     border-collapse: collapse;
     background-color: rgba(255, 255, 255, 0.8);
   }
@@ -53,7 +53,7 @@
     width: 90%;
   }
     #btn{
-        width:500px;
+        width:300px;
         height:30px;
     }
     </style>
