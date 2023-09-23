@@ -57,4 +57,7 @@ Public-cloud는 트래픽 감당, Private-cloud는 데이터의 보안의 역할
 |Deployment|Dockerfile|이미지 배포|
 |Git-Action|Openshift.yml|이미지 자동 배포|
 |Git-Action|slack.yaml|슬랙 알림|
+
+
+
     
