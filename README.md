@@ -1,4 +1,4 @@
-# jetty_public Jetty in Public Cloud
+# jetty_public Jetty in Private Cloud
 
 ### Overview
 기존의 3Tier 구성의 어플리케이션을 하이브리드 클라우드에서 사용하기 위해 backend의 기능을 분리하였다.
@@ -38,8 +38,8 @@ Public-cloud는 트래픽 감당, Private-cloud는 데이터의 보안의 역할
     
 #### 변형된 구성 HybridCloud - backend
 
-- 기존의 3tier 구성에서 hybrid-cloud 구조에서 Public-cloud에서 사용하기 위해 구성을 변경하였다.
-- public-cloud에서 유저들이 접속가능하며 상품 데이터를 읽기만 하는 메인페이지와 상세페이지를 분리시켰다.
+- 기존의 3tier 구성에서 hybrid-cloud 구조에서 Private-cloud에서 사용하기 위해 구성을 변경하였다.
+- private-cloud에서는 유저들의 개인정보를 등록하고 관리자가 상품 데이터를 관리할 수 있도록 회원정보등록과 전반적인 관리자 페이지로 분리시켰다.
 - Public-cloud, Private-cloud 에서 공통적으로  Git-Action, JDBC, Dockerfile이 사용된다
     Git-Action에 사용되는 workflow는 할당되는 변수 값에만 약간의 변화가 있고, JDBC는 동일하며, Dockerfile은 jsp파일 의 구성이 다르다
   
@@ -47,8 +47,12 @@ Public-cloud는 트래픽 감당, Private-cloud는 데이터의 보안의 역할
 
 |function|file|Role|
 |:-:|:-:|:-:|
-|backend|user_main.jsp|메인페이지|
-|backend|user_detail.jsp|상세페이지|
+|backend|admin_main.jsp|관리자 메인 페이지|
+|backend|admin_login.jsp|관리자 페이지 로그인|
+|backend|admin_enroll.jsp|물품 등록 페이지|
+|backend|admin_detail.jsp|관리자 상세페이지|
+|backend|delete.jsp|물품삭제|
+|backend|register.jsp|회원정보등록|
 |database|jdbc-config.xml|RDS연결|
 |Deployment|Dockerfile|이미지 배포|
 |Git-Action|Openshift.yml|이미지 자동 배포|
